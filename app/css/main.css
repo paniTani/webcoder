@@ -1,0 +1,758 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Source Sans Pro Light;
+  /* Имя шрифта */
+  src: url("../fonts/SourceSansProLight.ttf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: Source Sans Pro Light;
+  /* Имя шрифта */
+  src: url("../fonts/SourceSansProLight.ttf");
+  /* Путь к файлу со шрифтом */ }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px; }
+  body .main-header {
+    width: 280px;
+    margin: 0 auto; }
+  body .register {
+    float: left;
+    width: 100%;
+    background-image: url(../img/darkbotttom_register.png), url(../img/lightOrange_register.png), url(../img/orange_register.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, cover;
+    background-position: 50% 100%, 50% 50%, 5% 5%; }
+    body .register .register-container {
+      width: 960px;
+      margin: 19px auto; }
+      body .register .register-container .register-content {
+        width: 100%;
+        background-color: #fff;
+        display: table; }
+        body .register .register-container .register-content .slider-block, body .register .register-container .register-content .join-us-block {
+          width: 48%;
+          float: left; }
+        body .register .register-container .register-content .slider-block {
+          text-align: center;
+          background-color: #94c516;
+          /*.slider{
+            //position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: inline-block;
+            .slider_list{
+              position: relative;
+              width:100%;
+            }
+            .slider_item{
+              position: absolute;
+              top:0;
+              left:0;
+              z-index: 0;
+              width: 100%;
+              list-style-type: none;
+              img{
+                width: 100%;
+                display: block;
+              }
+              &.active-slide{
+                z-index: 1;
+                position: relative;
+              }
+            }
+          }*/ }
+          body .register .register-container .register-content .slider-block .slider {
+            width: 100%;
+            overflow: hidden; }
+            body .register .register-container .register-content .slider-block .slider .slider_list {
+              position: relative;
+              width: 100%;
+              margin: 0;
+              padding: 0; }
+              body .register .register-container .register-content .slider-block .slider .slider_list .slider_item {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                width: 100%;
+                list-style-type: none;
+                max-height: 465px; }
+                body .register .register-container .register-content .slider-block .slider .slider_list .slider_item img {
+                  display: block; }
+                body .register .register-container .register-content .slider-block .slider .slider_list .slider_item.active-slide {
+                  z-index: 1;
+                  position: relative; }
+                body .register .register-container .register-content .slider-block .slider .slider_list .slider_item.inslide {
+                  z-index: 2; }
+        body .register .register-container .register-content .join-us-block {
+          padding: 0 10px;
+          font: 100% Source Sans Pro Light, Times New Roman, sans-serif;
+          margin: 26px 0 0 10px; }
+          body .register .register-container .register-content .join-us-block h1 {
+            background: linear-gradient(#ffc087, #ff800c);
+            background: -moz-linear-gradient(#ffc087, #ff800c);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: 0; }
+          body .register .register-container .register-content .join-us-block .forms-block {
+            font-size: 16px; }
+            body .register .register-container .register-content .join-us-block .forms-block .i-am, body .register .register-container .register-content .join-us-block .forms-block .name, body .register .register-container .register-content .join-us-block .forms-block .age, body .register .register-container .register-content .join-us-block .forms-block .city, body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox, body .register .register-container .register-content .join-us-block .forms-block .field-btn {
+              float: left; }
+            body .register .register-container .register-content .join-us-block .forms-block p {
+              float: left;
+              width: 50px;
+              margin: 0; }
+            body .register .register-container .register-content .join-us-block .forms-block .join-form {
+              width: 320px;
+              float: left;
+              margin-left: 50px; }
+            body .register .register-container .register-content .join-us-block .forms-block .join-form .gender {
+              width: 90px;
+              float: left; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .woman, body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .man {
+                float: left;
+                width: 43px;
+                text-align: center;
+                padding: 2px 0 1px 0; }
+                body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .woman:hover, body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .man:hover {
+                  cursor: pointer; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .woman {
+                -webkit-border-radius: 19px 0 0 19px;
+                -moz-border-radius: 19px 0 0 19px;
+                -ms-border-radius: 19px 0 0 19px;
+                border-radius: 19px 0 0 19px;
+                border: 1px solid #8a550c; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .man {
+                -webkit-border-radius: 0 19px 19px 0;
+                -moz-border-radius: 0 19px 19px 0;
+                -ms-border-radius: 0 19px 19px 0;
+                border-radius: 0 19px 19px 0;
+                border-top: 1px solid #8a550c;
+                border-right: 1px solid #8a550c;
+                border-bottom: 1px solid #8a550c; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .gender-active {
+                background: #dc781a;
+                /* Для старых браузров */
+                background: linear-gradient(to top, #ffad03, #ff8d1c);
+                -webkit-box-shadow: inset 1px 2px 3px #b46116;
+                -moz-box-shadow: inset 1px 2px 3px #b46116;
+                box-shadow: inset 1px 2px 3px #b46116; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .gender .gender-passive {
+                background: #e6e7e7;
+                /* Для старых браузров */
+                background: linear-gradient(to top, #e6e7e7, #f5fafb); }
+            body .register .register-container .register-content .join-us-block .forms-block .join-form .looking-for {
+              float: left;
+              margin: 10px 20px; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .looking-for img {
+                float: left;
+                margin: 5px 10px 0 0; }
+              body .register .register-container .register-content .join-us-block .forms-block .join-form .looking-for p {
+                float: left;
+                width: 74px; }
+            body .register .register-container .register-content .join-us-block .forms-block .name {
+              margin-top: 10px; }
+              body .register .register-container .register-content .join-us-block .forms-block .name input {
+                width: 306px;
+                height: 32px;
+                background: linear-gradient(#e7e7e7, #f5f9fa);
+                -webkit-border-radius: 16px;
+                -moz-border-radius: 16px;
+                -ms-border-radius: 16px;
+                border-radius: 16px;
+                border: 1px solid #909090;
+                padding-left: 12px;
+                -webkit-box-shadow: inset 1px 1px 1px #ddd;
+                -moz-box-shadow: inset 1px 1px 1px #ddd;
+                box-shadow: inset 1px 1px 1px #ddd; }
+                body .register .register-container .register-content .join-us-block .forms-block .name input:focus {
+                  outline: none;
+                  -webkit-box-shadow: inset 2px 2px 2px #909090;
+                  -moz-box-shadow: inset 2px 2px 2px #909090;
+                  box-shadow: inset 2px 2px 2px #909090;
+                  padding-left: 12px; }
+              body .register .register-container .register-content .join-us-block .forms-block .name .check-form-times, body .register .register-container .register-content .join-us-block .forms-block .name .check-form-check {
+                width: 17px;
+                float: left;
+                margin: 8px 0 0 7px;
+                display: none; }
+              body .register .register-container .register-content .join-us-block .forms-block .name .tooltip {
+                float: left;
+                position: absolute;
+                margin-left: 467px;
+                margin-top: -19px;
+                display: none; }
+            body .register .register-container .register-content .join-us-block .forms-block .age {
+              margin-top: 14px; }
+              body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-day, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-month, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-year {
+                overflow: hidden;
+                float: left;
+                width: 84px;
+                height: 36px;
+                background-image: url(../img/select_day.png); }
+                body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-day select, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-month select, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-year select {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  width: 100%;
+                  height: 100%;
+                  padding: 0 18px;
+                  background: none;
+                  -webkit-border-radius: 18px;
+                  -moz-border-radius: 18px;
+                  -ms-border-radius: 18px;
+                  border-radius: 18px;
+                  font-size: 15px;
+                  color: #787878;
+                  /*background-color: transparent;
+                    height: 30px;
+                    width: 74px;
+                    margin-top: 3px;
+                    padding-left: 20px;
+                    color: #787878;
+                    border: 0; !* убираем рамку, рамка будет у div-а такой, какой мы её сделаем. *!*/ }
+                  body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-day select:focus, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-month select:focus, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-year select:focus {
+                    outline: none; }
+                  body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-day select:hover, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-month select:hover, body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-year select:hover {
+                    cursor: pointer; }
+              body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-month {
+                width: 119px;
+                margin: 0 5px;
+                background-image: url(../img/select_month.png); }
+                body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-month select {
+                  padding: 0 11px; }
+              body .register .register-container .register-content .join-us-block .forms-block .age .field-age .select-year {
+                width: 105px;
+                background-image: url(../img/select_year.png); }
+              body .register .register-container .register-content .join-us-block .forms-block .age .check-form-times, body .register .register-container .register-content .join-us-block .forms-block .age .check-form-check {
+                width: 17px;
+                float: left;
+                margin: 8px 0 0 7px;
+                display: none; }
+              body .register .register-container .register-content .join-us-block .forms-block .age .tooltip {
+                float: left;
+                position: absolute;
+                margin-left: 467px;
+                margin-top: -19px;
+                display: none; }
+            body .register .register-container .register-content .join-us-block .forms-block .city {
+              margin-top: 14px; }
+              body .register .register-container .register-content .join-us-block .forms-block .city .field-city .select-city {
+                overflow: hidden;
+                float: left;
+                width: 320px;
+                height: 36px;
+                background-image: url(../img/select_city.png); }
+                body .register .register-container .register-content .join-us-block .forms-block .city .field-city .select-city select {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  width: 100%;
+                  height: 100%;
+                  padding: 0 18px;
+                  background: none;
+                  -webkit-border-radius: 18px;
+                  -moz-border-radius: 18px;
+                  -ms-border-radius: 18px;
+                  border-radius: 18px;
+                  font-size: 15px;
+                  color: #787878; }
+                  body .register .register-container .register-content .join-us-block .forms-block .city .field-city .select-city select:focus {
+                    outline: none; }
+                  body .register .register-container .register-content .join-us-block .forms-block .city .field-city .select-city select:hover {
+                    cursor: pointer; }
+            body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox {
+              margin-top: 14px; }
+              body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox {
+                margin-left: 100px; }
+                body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field, body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field {
+                  float: left;
+                  width: 160px;
+                  /*label{
+                    position: relative;
+                    &:before{
+                      content: "";
+                      width: 14px;
+                      height: 14px;
+                      display: inline-block;
+                      border: 1px solid #a2a2a2;
+                      vertical-align: middle;
+                    }
+
+                  }
+                  input[type="checkbox"]{
+                    display: none;
+                    &:checked + label:before{
+                      //background-color: #dc781a;
+                    }
+                    &:checked + label:after{
+                      content: "";
+                      width: 12px;
+                      height: 12px;
+                      display: inline-block;
+                      //border: 1px solid #ffbb31;
+                      position: absolute;
+                      background: linear-gradient(#ffbb31, #d97917);
+                      vertical-align: middle;
+                      left: 2px;
+                      top: 6px;
+                    }
+
+                  }*/ }
+                  body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field label, body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field label {
+                    float: left; }
+                  body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field label[for="beer"], body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field label[for="life-good"], body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field label[for="beer"], body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field label[for="life-good"] {
+                    margin-top: 14px; }
+                body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field label {
+                  position: relative; }
+                  body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field label:before {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    display: inline-block;
+                    border: 1px solid #a2a2a2;
+                    vertical-align: middle;
+                    margin-right: 10px; }
+                body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field input {
+                  display: none; }
+                  body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .checkbox-field input:checked + label:after {
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    display: inline-block;
+                    position: absolute;
+                    background: linear-gradient(#ffbb31, #d97917);
+                    vertical-align: middle;
+                    left: 2px;
+                    top: 6px; }
+                body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field label {
+                  position: relative; }
+                  body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field label:before {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    display: inline-block;
+                    border: 1px solid #a2a2a2;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    -ms-border-radius: 7px;
+                    border-radius: 7px;
+                    vertical-align: middle;
+                    margin-right: 10px; }
+                body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field input {
+                  display: none; }
+                  body .register .register-container .register-content .join-us-block .forms-block .radio-checkbox .field-radio-checkbox .radio-field input:checked + label:after {
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    display: inline-block;
+                    position: absolute;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    border-radius: 5px;
+                    background: linear-gradient(#ffbb31, #d97917);
+                    vertical-align: middle;
+                    left: 2px;
+                    top: 6px; }
+            body .register .register-container .register-content .join-us-block .forms-block .field-btn button {
+              width: 300px;
+              height: 70px;
+              margin-top: 26px;
+              -webkit-border-radius: 35px;
+              -moz-border-radius: 35px;
+              -ms-border-radius: 35px;
+              border-radius: 35px;
+              color: #fff;
+              font-size: 48px;
+              background-image: url(../img/button.png);
+              border: none;
+              margin-left: 118px; }
+              body .register .register-container .register-content .join-us-block .forms-block .field-btn button:hover {
+                cursor: pointer; }
+              body .register .register-container .register-content .join-us-block .forms-block .field-btn button:active {
+                -webkit-box-shadow: inset 3px 3px 3px #94c516;
+                -moz-box-shadow: inset 3px 3px 3px #94c516;
+                box-shadow: inset 3px 3px 3px #94c516; }
+              body .register .register-container .register-content .join-us-block .forms-block .field-btn button:focus {
+                outline: none; }
+  body main {
+    float: left;
+    width: 100%;
+    font: 100% Source Sans Pro Light, Times New Roman, sans-serif;
+    color: #4e4e4e; }
+    body main .main-container {
+      width: 960px;
+      margin: 0 auto;
+      /*//slider
+
+      #slider-container{
+        position: relative;
+        width: 410px;
+        height: 70px;
+        .slides{
+          height: 100%;
+          position: relative;
+        }
+        li{
+          display: table;
+          float: left;
+          height: 100%;
+          img{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+          }
+        }
+      }*/ }
+      body main .main-container .code-users .code-content img {
+        float: left; }
+      body main .main-container .code-users .code-content .element {
+        /*shape-outside: url(../img/code_this_block.jpg);
+            shape-image-threshold: 0.1;*/
+        shape-outside: circle(50%);
+        -webkit-shape-outside: circle(50%);
+        float: left; }
+      body main .main-container .code-users .code-content .shape {
+        float: left;
+        width: 173px;
+        height: 173px;
+        margin: 5px 10px 25px 0;
+        padding: 0px;
+        background-image: url(../img/code_this_block.jpg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 44% 0%;
+        -webkit-border-radius: 86px;
+        -moz-border-radius: 86px;
+        -ms-border-radius: 86px;
+        border-radius: 86px; }
+      body main .main-container .code-users .code-content p {
+        text-align: right;
+        font-size: 14px; }
+      body main .main-container .code-users .code-content .code-text {
+        float: left;
+        width: 70%; }
+      body main .main-container .code-users .users-list, body main .main-container .code-users .code-this-block {
+        float: left;
+        width: 49%;
+        padding: 0; }
+        body main .main-container .code-users .users-list h1, body main .main-container .code-users .code-this-block h1 {
+          margin-top: 42px; }
+      body main .main-container .code-users .users-list {
+        margin-left: 2%;
+        background-color: antiquewhite; }
+        body main .main-container .code-users .users-list .user-list-block {
+          padding: 0 10px;
+          margin-left: 14.7%; }
+          body main .main-container .code-users .users-list .user-list-block h1 {
+            margin-bottom: 0; }
+          body main .main-container .code-users .users-list .user-list-block .carousel-block {
+            float: left; }
+            body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel {
+              width: 400px;
+              overflow: hidden;
+              margin-top: 7px; }
+              body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .carousel-list {
+                width: 640px;
+                /*margin: 0 0 0 -50px;*/
+                padding: 0; }
+                body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .carousel-list .carousel-img {
+                  float: left;
+                  list-style-type: none;
+                  margin-right: 10px; }
+                  body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .carousel-list .carousel-img:hover {
+                    cursor: pointer; }
+              body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks {
+                position: absolute; }
+                body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks .hover {
+                  float: left;
+                  display: none;
+                  width: 70px;
+                  height: 70px;
+                  margin-right: 10px;
+                  background-color: rgba(0, 0, 0, 0.4);
+                  color: #fff;
+                  text-align: center; }
+                  body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks .hover:hover {
+                    cursor: pointer; }
+                  body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks .hover p {
+                    margin: 15px 0 0 0; }
+                  body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks .hover .icon-block {
+                    margin-top: 5px; }
+                    body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks .hover .icon-block .icon-wink {
+                      margin-right: 6px; }
+                    body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel .hovered-blocks .hover .icon-block .icon-add {
+                      cursor: pointer; }
+            body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel-controls {
+              margin-top: -50px;
+              float: left; }
+              body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel-controls a {
+                margin-left: -30px; }
+                body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel-controls a:last-child {
+                  margin-left: 397px;
+                  float: left; }
+              body main .main-container .code-users .users-list .user-list-block .carousel-block .carousel-controls .carousel-prev {
+                float: left; }
+          body main .main-container .code-users .users-list .user-list-block .tabs-block {
+            float: left;
+            width: 100%;
+            margin-top: 17px; }
+            body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs {
+              width: 100%;
+              float: left;
+              margin: 0;
+              padding: 0; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs li {
+                position: relative;
+                list-style-type: none;
+                display: inline-block;
+                cursor: pointer;
+                color: #969696;
+                z-index: 1;
+                margin-bottom: 5px;
+                outline: 0;
+                border: none; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs li:first-child {
+                  width: 80px;
+                  background: url(../img/tab-user-active.png);
+                  position: relative;
+                  background-repeat: no-repeat;
+                  padding: 8px 20px 8px 11px; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs li:last-child {
+                  width: 155px;
+                  background: url(../img/tab-active-list-inactive.png);
+                  position: relative;
+                  background-repeat: no-repeat;
+                  margin-left: -15px;
+                  padding: 7px 20px 7px 11px; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs li:focus {
+                  outline: 0;
+                  border: 0; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs .active-tab {
+                color: #ffa352;
+                z-index: 4; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs .active-tab span {
+                  color: #969696; }
+            body main .main-container .code-users .users-list .user-list-block .tabs-block .panel {
+              display: none;
+              width: 374px;
+              float: left;
+              margin-top: -12px;
+              padding: 16px 0 0 16px;
+              z-index: 1;
+              -webkit-border-radius: 6px;
+              -moz-border-radius: 6px;
+              -ms-border-radius: 6px;
+              border-radius: 6px; }
+            body main .main-container .code-users .users-list .user-list-block .tabs-block .panel1 {
+              height: 138px; }
+            body main .main-container .code-users .users-list .user-list-block .tabs-block .active-panel {
+              background-color: #fff;
+              display: block;
+              -webkit-box-shadow: inset 0 0 2px #969696;
+              -moz-box-shadow: inset 0 0 2px #969696;
+              box-shadow: inset 0 0 2px #969696;
+              z-index: 3;
+              position: relative; }
+            body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left {
+              float: left;
+              width: 230px; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .progressbar-block {
+                margin-top: 8px; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .progressbar-block #progressbar {
+                  width: 230px;
+                  height: 15px; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .progressbar-block #progressbar .ui-progressbar-value {
+                    height: 76%;
+                    margin: 1px;
+                    background: linear-gradient(to top, #ff8d1c, #ffbb30);
+                    font-size: 9px;
+                    text-align: center; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block {
+                margin-top: 25px; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps {
+                  width: 230px;
+                  font-size: 10px;
+                  overflow: hidden; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step {
+                    float: left;
+                    position: relative;
+                    text-align: center;
+                    opacity: 0.99;
+                    padding: 7px 15px 8px 15px;
+                    margin-right: -10px;
+                    background: url(../img/steps_front.png);
+                    background-repeat: no-repeat;
+                    box-shadow: none; }
+                    body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step:hover {
+                      cursor: pointer; }
+                    body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step:focus {
+                      outline: none; }
+                    body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step:active {
+                      outline: none; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step1 {
+                    z-index: 5; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step2 {
+                    z-index: 4; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step3 {
+                    z-index: 3; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step4 {
+                    z-index: 2; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .steps-block .steps .step5 {
+                    z-index: 1;
+                    background: url(../img/step-five.png);
+                    background-repeat: no-repeat; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .double-slider-block {
+                float: left;
+                margin-top: 14px; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .double-slider-block #slider-range {
+                  width: 230px;
+                  margin-top: 10px;
+                  background: #f4f8f9; }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .double-slider-block #slider-range .ui-slider-range {
+                    background: linear-gradient(to top, #ff8d1c, #ffbb30); }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-left .double-slider-block #slider-range .ui-slider-handle {
+                    width: 22px;
+                    height: 27px;
+                    background: url(../img/slider-indicator.png) no-repeat;
+                    overflow: hidden;
+                    position: absolute;
+                    top: -7px;
+                    border-style: none;
+                    outline: none; }
+            body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right {
+              font: 100% Source Sans Pro Light, Times New Roman, sans-serif;
+              float: left;
+              margin-left: 30px; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right #container {
+                width: 90px;
+                height: 90px; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right .percentage {
+                font-size: 21px;
+                position: absolute;
+                float: left;
+                margin: 32px 0 0 30px; }
+              body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right .rating-block {
+                float: left;
+                width: 100%;
+                margin-top: 10px; }
+                body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right .rating-block .rating {
+                  width: 100%;
+                  overflow: hidden;
+                  margin: 0;
+                  padding: 0;
+                  /*li{
+                      position: relative;
+                      list-style-type: none;
+                      padding: 3px;
+                      display: inline-block;
+                      cursor: pointer;
+                      color: #969696;
+                      z-index: 1;
+
+
+
+                    }*/ }
+                  body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right .rating-block .rating .stars {
+                    width: 16px;
+                    height: 15px;
+                    float: left;
+                    margin-left: 2px; }
+                    body main .main-container .code-users .users-list .user-list-block .tabs-block .tabs-block-right .rating-block .rating .stars:hover {
+                      cursor: pointer; }
+      body main .main-container .how-to {
+        width: 100%;
+        float: left;
+        padding-bottom: 50px; }
+        body main .main-container .how-to h1 {
+          margin-left: 10px; }
+        body main .main-container .how-to .how-to-rows {
+          width: 30%;
+          float: left;
+          margin: 0 10px;
+          font-size: 14px;
+          padding-right: 12px;
+          /* blockquote:before {
+             content: open-quote;
+             font-size: 50px;
+             //margin-left: -25px}
+           }*/ }
+          body main .main-container .how-to .how-to-rows p {
+            margin-top: 0; }
+            body main .main-container .how-to .how-to-rows p a {
+              color: #ffa352; }
+          body main .main-container .how-to .how-to-rows .vertical-line {
+            border-left: 2px solid #ffa352;
+            padding-left: 15px;
+            color: #ffa352;
+            margin: 0;
+            line-height: 0.99; }
+          body main .main-container .how-to .how-to-rows .you-can-also {
+            margin-top: 22px; }
+          body main .main-container .how-to .how-to-rows .list {
+            margin-left: -2px; }
+          body main .main-container .how-to .how-to-rows .blockquote-block .quote {
+            width: 5%;
+            float: left;
+            margin-top: 0px; }
+          body main .main-container .how-to .how-to-rows .blockquote-block .open-quote img {
+            rotate: 180deg; }
+          body main .main-container .how-to .how-to-rows .blockquote-block .blockquote {
+            width: 90%;
+            float: left;
+            font-style: italic;
+            line-height: 1;
+            margin: 0; }
+            body main .main-container .how-to .how-to-rows .blockquote-block .blockquote blockquote {
+              width: 100%;
+              margin: 3px 5px; }
+          body main .main-container .how-to .how-to-rows .blockquote-block .close-quote {
+            margin-top: 105px; }
+          body main .main-container .how-to .how-to-rows .blockquote-block .click-here {
+            width: 50%;
+            float: right;
+            margin: 20px -10px 0 0; }
+            body main .main-container .how-to .how-to-rows .blockquote-block .click-here a {
+              color: #ffa352; }
+              body main .main-container .how-to .how-to-rows .blockquote-block .click-here a i {
+                margin: 3px 5px 0 0;
+                float: left; }
+  body footer .main-footer {
+    width: 960px;
+    margin: 0 auto;
+    display: table;
+    padding: 20px 0;
+    /*@include border-top(1px solid #cfcfcf);*/
+    border-top: 1px solid #cfcfcf; }
+    body footer .main-footer .half-footer {
+      width: 50%;
+      float: left; }
+    body footer .main-footer .footer-logo {
+      padding-bottom: 26px; }
+    body footer .main-footer .footer-code-task img {
+      float: right; }
+
+/*
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  .container {
+    width: 90%;
+  }
+}*/
